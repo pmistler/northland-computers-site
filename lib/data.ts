@@ -9,7 +9,7 @@ export const company = {
   name: "Northland Computers",
   phone: "(617) 775-0934",
   email: "website@norlc.com",
-  address: "8 Pine Street, Upton, MA 01568",
+  address: "Serving Central Massachusetts, MetroWest, Worcester County, and Greater Boston (by appointment).",
   domain: "norlc.com",
   founded: 2006
 };
