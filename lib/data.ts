@@ -18,6 +18,7 @@ export const nav = [
   { href: "/solutions", label: "Solutions" },
   { href: "/industries", label: "Industries" },
   { href: "/projects", label: "Projects" },
+  { href: "/technology-leadership", label: "Leadership" },
   { href: "/why-northland", label: "Why Northland" },
   { href: "/about", label: "About" },
   { href: "/contact", label: "Contact" }

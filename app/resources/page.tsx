@@ -1,0 +1,11 @@
+import Link from "next/link"; import {CTA,PageHero,SectionHeader} from "@/components/Sections";
+export const metadata={title:"Technology Resources",description:"Practical guidance on managed IT, cybersecurity, AI, cloud, infrastructure, websites, and technology planning from Northland Computers.",alternates:{canonical:"/resources"}};
+const topics=[
+ {title:"Choosing a Managed IT Partner",desc:"What to ask about ownership, documentation, response, contracts, security, and long-term planning.",href:"/why-northland"},
+ {title:"Cyber Insurance Readiness",desc:"The controls, documentation, response planning, and account security insurers increasingly expect.",href:"/solutions/cybersecurity"},
+ {title:"Responsible AI Adoption",desc:"How to identify useful AI workflows while protecting data and setting clear staff expectations.",href:"/solutions/ai-automation"},
+ {title:"Infrastructure Planning",desc:"When to refresh networks, wireless, servers, firewalls, backups, and cloud systems.",href:"/solutions/infrastructure-projects"},
+ {title:"Website Ownership",desc:"Why your organization should control its domain, hosting, accounts, content, and analytics.",href:"/solutions/website-management"},
+ {title:"Technology Leadership",desc:"How roadmaps, budgets, lifecycle planning, and vendor accountability reduce expensive surprises.",href:"/technology-leadership"}
+];
+export default function Page(){return <main><PageHero eyebrow="Resources" title="Practical guidance for better technology decisions." desc="Northland shares straightforward information for leaders who need to evaluate risk, plan investments, manage vendors, and understand what good technology support should look like."/><section className="px-4 py-20 sm:px-6 lg:px-8"><div className="mx-auto max-w-7xl"><SectionHeader title="Start with the decisions that matter most." desc="These resource areas will continue to grow into detailed guides, checklists, and articles."/><div className="mt-12 grid gap-5 md:grid-cols-2 lg:grid-cols-3">{topics.map(t=><Link key={t.title} href={t.href} className="card-hover rounded-3xl border border-slate-200 bg-white p-7"><h2 className="text-xl font-black text-navy">{t.title}</h2><p className="mt-3 leading-7 text-slate-600">{t.desc}</p><p className="mt-5 font-extrabold text-electric">Explore topic →</p></Link>)}</div></div></section><CTA/></main>}
