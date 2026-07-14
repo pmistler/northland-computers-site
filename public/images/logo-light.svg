@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="520" height="160" viewBox="0 0 520 160" role="img" aria-labelledby="title desc">
+<title id="title">Northland Computers logo light</title><desc id="desc">Compass mark with Northland Computers wordmark in white.</desc>
+<defs><style>.white{fill:#fff}.blue{fill:#51D6FF}.line{stroke:#fff;stroke-width:5;stroke-linecap:round;stroke-linejoin:round}</style></defs>
+<g transform="translate(78 80)">
+<circle r="48" fill="none" stroke="#fff" stroke-width="5"/><circle r="27" fill="none" stroke="#51D6FF" stroke-width="4"/><path class="line" d="M0-70V-48M0 48v22M-70 0h22M48 0h22"/><path fill="#51D6FF" d="M0-62 11-11 0-18-11-11zM0 62 11 11 0 18-11 11zM-62 0l51-11-7 11 7 11zM62 0 11-11l7 11-7 11z"/><path class="line" d="M-34-34 34 34M34-34-34 34" opacity=".45"/><circle r="5" fill="#fff"/></g>
+<text x="155" y="70" font-family="Georgia, 'Times New Roman', serif" font-size="38" font-weight="700" class="white">Northland</text>
+<text x="155" y="113" font-family="Georgia, 'Times New Roman', serif" font-size="34" font-weight="700" class="white">Computers</text>
+</svg>

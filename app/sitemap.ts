@@ -1,0 +1,1 @@
+import {MetadataRoute} from "next"; import {allRoutes,siteUrl} from "@/lib/seo"; export default function sitemap():MetadataRoute.Sitemap{return allRoutes.map((path,i)=>({url:`${siteUrl}${path}`,lastModified:new Date(),changeFrequency:path===""?"weekly":"monthly",priority:path===""?1:path.split("/").length===2?.9:.8}))}
