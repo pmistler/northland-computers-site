@@ -1,19 +1,15 @@
-# Northland Computers 2030 — Live-Site Refinement
+# Northland Computers 2030 — K–12 & Credibility Revision
 
-## Included in this update
-- Modernized the Northland wordmark while preserving the compass identity.
-- Added dark and light SVG logo variants for sharp display at any size.
-- Removed the boxed logo treatment and improved header proportions.
-- Reworked desktop and mobile navigation spacing and accessibility.
-- Tightened homepage hero wording for faster scanning.
-- Changed the technical metric “AP deployment” to “Wireless access points.”
-- Refined section headlines, typography, spacing, buttons, cards, and footer copy.
-- Improved mobile button stacking and responsive hero sizing.
-- Added a skip-to-content link, stronger focus states, reduced-motion support, and form focus styling.
-- Retained the original converted vector logo in `public/images/northland-logo-original.svg` for reference.
+This revision strengthens Northland's public positioning without naming current sensitive assessment engagements.
 
-## Build validation
-`npm run build` completed successfully with all 48 routes generated.
+## Changes
 
-## Upload
-Upload the contents of this folder to the root of the GitHub repository. Do not upload the enclosing ZIP folder as a nested directory.
+- Expanded the client/organization proof strip to reflect a broader mix of enterprise, financial, veterinary, manufacturing, technology, real-estate, and public-school experience.
+- Added Acushnet Public Schools and Uxbridge Public Schools to the supported-organization list.
+- Did **not** add Fall River Public Schools. The current assessment engagement should remain off the marketing site until the engagement is complete and public-name usage is appropriate.
+- Rebuilt the Schools & Education page around K–12 technology leadership, independent cybersecurity/technology assessments, Google Workspace for Education security and administration, infrastructure modernization, E-Rate, device programs, cloud migration, and project execution.
+- Added a Cybersecurity & Technology Assessments solution.
+- Added a Google Workspace Security & Administration solution.
+- Added K–12 as a homepage specialization alongside veterinary IT.
+- Added a cybersecurity-assessment homepage feature and stronger education-focused Technology Insights topics.
+- Preserved the responsive header fix and Node.js 24 configuration from the current production repository.

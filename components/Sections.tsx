@@ -31,12 +31,13 @@ export function PageHero({ eyebrow, title, desc, children }: { eyebrow: string; 
   );
 }
 
-export function SectionHeader({ eyebrow, title, desc, align = "center" }: { eyebrow?: string; title: string; desc?: string; align?: "center" | "left" }) {
+export function SectionHeader({ eyebrow, title, desc, align = "center", tone = "light" }: { eyebrow?: string; title: string; desc?: string; align?: "center" | "left"; tone?: "light" | "dark" }) {
+  const dark = tone === "dark";
   return (
     <div className={align === "center" ? "mx-auto max-w-3xl text-center" : "max-w-3xl"}>
-      {eyebrow && <p className="text-xs font-black uppercase tracking-[.23em] text-electric sm:text-sm">{eyebrow}</p>}
-      <h2 className="mt-3 text-3xl font-black leading-tight tracking-[-.025em] text-navy sm:text-4xl lg:text-[2.8rem]">{title}</h2>
-      {desc && <p className="mt-4 text-lg leading-8 text-slate-600">{desc}</p>}
+      {eyebrow && <p className={`text-xs font-black uppercase tracking-[.23em] sm:text-sm ${dark ? "text-cyan" : "text-electric"}`}>{eyebrow}</p>}
+      <h2 className={`mt-3 text-3xl font-black leading-tight tracking-[-.025em] sm:text-4xl lg:text-[2.8rem] ${dark ? "text-white" : "text-navy"}`}>{title}</h2>
+      {desc && <p className={`mt-4 text-lg leading-8 ${dark ? "text-slate-300" : "text-slate-600"}`}>{desc}</p>}
     </div>
   );
 }
@@ -63,6 +64,6 @@ export function BulletList({ items }: { items: string[] }) {
   return <div className="grid gap-3">{items.map((x) => <div key={x} className="flex gap-3 text-slate-700"><CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-signal" /><span>{x}</span></div>)}</div>;
 }
 
-export function TextLink({ href, children }: { href: string; children: React.ReactNode }) {
-  return <a href={href} className="focus-ring inline-flex items-center gap-2 rounded-md font-extrabold text-electric transition hover:text-navy">{children}<ArrowRight className="h-4 w-4" /></a>;
+export function TextLink({ href, children, tone = "light" }: { href: string; children: React.ReactNode; tone?: "light" | "dark" }) {
+  return <a href={href} className={`focus-ring inline-flex items-center gap-2 rounded-md font-extrabold transition ${tone === "dark" ? "text-cyan hover:text-white" : "text-electric hover:text-navy"}`}>{children}<ArrowRight className="h-4 w-4" /></a>;
 }
