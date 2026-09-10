@@ -22,7 +22,7 @@ export default function Footer() {
         <div><h3 className="font-extrabold">Solutions</h3><div className="mt-4 grid gap-2.5">{solutions.slice(0, 6).map((i) => <Link className="text-sm text-slate-300 hover:text-cyan" href={`/solutions/${i.slug}`} key={i.slug}>{i.title}</Link>)}</div></div>
         <div><h3 className="font-extrabold">Industries</h3><div className="mt-4 grid gap-2.5">{industries.slice(0, 6).map((i) => <Link className="text-sm text-slate-300 hover:text-cyan" href={`/industries/${i.slug}`} key={i.slug}>{i.title}</Link>)}</div></div>
       </div>
-      <div className="border-t border-white/10 px-4 py-5 text-center text-xs text-slate-400">Copyright © {new Date().getFullYear()} Northland Computers. All rights reserved.</div>
+      <div className="border-t border-white/10 px-4 py-5 text-center text-xs text-slate-400">Copyright © {new Date().getFullYear()} {company.legalName}. All rights reserved.</div>
     </footer>
   );
 }

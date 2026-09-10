@@ -13,3 +13,11 @@ This revision strengthens Northland's public positioning without naming current 
 - Added K–12 as a homepage specialization alongside veterinary IT.
 - Added a cybersecurity-assessment homepage feature and stronger education-focused Technology Insights topics.
 - Preserved the responsive header fix and Node.js 24 configuration from the current production repository.
+
+## LLC legal-entity update
+
+- Public-facing brand remains **Northland Computers**.
+- Legal entity is now **Northland Computers, LLC**.
+- Footer copyright, contact identity, and structured-data `legalName` now use the LLC name.
+- Marketing headlines, logo, SEO titles, and service copy continue to use **Northland Computers** for brand continuity.
+

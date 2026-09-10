@@ -7,6 +7,7 @@ import {
 
 export const company = {
   name: "Northland Computers",
+  legalName: "Northland Computers, LLC",
   phone: "(617) 775-0934",
   email: "website@norlc.com",
   address: "Serving Central Massachusetts, MetroWest, Worcester County, and Greater Boston (by appointment).",
